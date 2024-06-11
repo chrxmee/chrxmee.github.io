@@ -1,6 +1,6 @@
 /*BEGIN PS4 Controller Styling*/
 .controller.ds4 {
-    background: url(chrxmebase2.png);
+    background: url(chrxmebase3.png);
     height: 700px;
     width: 1200px;
     /*    margin-left: -403px;
@@ -156,7 +156,7 @@ background-position: 0 -70px;
     position: absolute;
     width: 55px;
     height: 55px;
-    background: url(chrxmebuttons.png);
+    background: url(face2.png);
 }
 
 .ds4 .button.pressed {
@@ -229,7 +229,7 @@ background-position: 0 -70px;
 }
 
 .ds4 .face {
-    background: url(dpad2.png);
+    background: url(dpad3.png);
     position: absolute;
 }
 
