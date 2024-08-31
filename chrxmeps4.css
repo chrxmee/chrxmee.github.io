@@ -1,10 +1,14 @@
 /*BEGIN PS4 Controller Styling*/
 .controller.ds4 {
-    background: url(chrxmebase44.gif);
-    height: 700px;
-    width: 1200px;
+    background: url(chrxmeps6.gif);
+    height: 598px;
+    width: 806px;
     /*    margin-left: -403px;
         margin-top: -280px;*/
+}
+
+.ds4.disconnected {
+    background: url(ps4-assets/disconnected.svg);
 }
 
 .ds4.disconnected div {
@@ -12,17 +16,16 @@
 }
 
 .ds4 .triggers {
-    width: 598px;
+    width: 588px;
     height: 90px;
     position: absolute;
-    left: 299px;
-    top: 38px;
+    left: 109px;
 }
 
 .ds4 .trigger {
     width: 99px;
     height: 100%;
-    background: url(chrxmeT.png);
+    background: url(chrxmeps4trigger.png);
     opacity: 0;
 }
 
@@ -36,22 +39,22 @@
 }
 
 .ds4 .bumper {
-    width: 200px;
-    height: 45px;
-    background: url(chrxmebump.png) no-repeat;
+    width: 99px;
+    height: 23px;
+    background: url(bumperps4.png) no-repeat;
     opacity: 0;
 }
 
 .ds4 .bumpers {
     position: absolute;
-    width: 672px;
+    width: 588px;
     height: 23px;
-    left: 263px;
-    top: 132px;
+    left: 109px;
+    top: 94px;
 }
 
 .ds4 .bumper.pressed {
-    opacity: 0.8;
+    opacity: 1;
 }
 
 .ds4 .bumper.left {
@@ -66,29 +69,38 @@
 }
 
 .ds4 .touchpad {
-    width: 350px;
-    height: 300px;
+    width: 262px;
+    height: 151px;
     position: absolute;
-    left: 422px;
-    top: 74px;
+    left: 272px;
+    top: 122px;
 }
 
 .ds4 .touchpad.pressed {
-    background: url(Touchpad.png) no-repeat center;
+    background: url(ps4-assets/touchpad.svg) no-repeat center;
 }
 
 .ds4 .meta {
-    width: 100px;
-    height: 100px;
+    width: 42px;
+    height: 42px;
     position: absolute;
-    left: 546px;
-    bottom: 264px;
+    left: 382px;
+    bottom: 216px;
 }
 
 .ds4 .meta.pressed {
-    background: url(Home.png) no-repeat center;
+    background: url(ps4-assets/meta.svg) no-repeat center;
 }
 
+/*Not needed, but I like keeping them here for posterity*/
+/*.ds4 .quadrant{
+position: absolute;
+background: url(ps4-assets/player-n.svg);
+height: 17px;
+width: 111px;
+top: 140px;
+left: 240px;
+}
 .ds4 .p0{
 background-position: 0 -6px;
 }
@@ -110,22 +122,11 @@ background-position: 0 -70px;
 }
 
 .ds4 .back, .ds4 .start {
-    background: url(chrxmeselect.png);
-    width: 26px;
-    height: 43px;
+    background: url(chrxmestartps4.png);
+    width: 28px;
+    height: 46px;
     opacity: 0;
 }
-.ds4 .start {
-    position: absolute;
-    left: 546px;
-    bottom: -30px;
-}
-.ds4 .back {
-    position: absolute;
-    left: 170px;
-    bottom: -30px;
-}
-
 
 .ds4 .back.pressed, .ds4 .start.pressed {
     /* background-position-y: -21px; */
@@ -141,15 +142,15 @@ background-position: 0 -70px;
 .ds4 .start {
     float: right;
     /* width: 28px; */
-    background-position: 0px 0;
+    background-position: 28px 0;
 }
 
 .ds4 .abxy {
     position: absolute;
     width: 170px;
     height: 171px;
-    top: 200px;
-    left: 762px;
+    top: 159px;
+    left: 567px;
 }
 
 .ds4 .button {
@@ -166,38 +167,37 @@ background-position: 0 -70px;
 
 .ds4 .a {
     background-position: 0 0;
-    bottom: 0px;
+    bottom: 0;
     left: 58px;
 }
 
 .ds4 .b {
     background-position: -57px 0;
-    top: 57px;
-    right: -3px;
+    top: 58px;
+    right: 0px;
 }
 
 .ds4 .x {
     background-position: -113px 0;
-    top: 57px;
+    top: 58px;
 }
 
 .ds4 .y {
     background-position: 55px 0;
     left: 58px;
-    bottom: 119px;
 }
 
 .ds4 .sticks {
     position: absolute;
-    width: 364px;
+    width: 361px;
     height: 105px;
-    top: 348px;
-    left: 422px;
+    top: 308px;
+    left: 228px;
 }
 
 .ds4 .stick {
     position: absolute;
-    background: url(realsticks.png);
+    background: url(ds4stick.png);
     height: 94px;
     width: 94px;
 }
@@ -224,23 +224,23 @@ background-position: 0 -70px;
     position: absolute;
     width: 125px;
     height: 126px;
-    top: 220px;
-    left: 286px;
+    top: 181px;
+    left: 92px;
 }
 
 .ds4 .face {
-    background: url(dpad3.png);
+    background: url(dpadps4.png);
     position: absolute;
 }
 
 .ds4 .face.up, .ds4 .face.down {
-    width: 37px;
+    width: 36px;
     height: 52px;
 }
 
 .ds4 .face.left, .ds4 .face.right {
     width: 52px;
-    height: 40px;
+    height: 36px;
 }
 
 .ds4 .face.up {
@@ -277,11 +277,3 @@ background-position: 0 -70px;
 }
 
 /*END PS4 Controller Styling*/
-
-.ds4.white .back, .ds4 .start {
-    background-image: url(chrxmestart.png);
-    width: 26px;
-    height: 43px;
-}
-
-/*END PS4 White Controller Styling*/
